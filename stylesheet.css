@@ -1,0 +1,646 @@
+
+
+*{
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+nav{
+  background: white;
+  height: 120px;
+  width: 100%;
+}
+label.nav-logo{
+color: #fff;
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 80px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  color: orangered;
+  transition: 0.5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: darkgrey;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+}
+#check{
+  display: none;
+}
+
+@media(max-width:952px) {
+  label.nav-logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+
+
+
+@media(max-width:858px) 
+
+{.checkbtn{
+  display: block;
+}
+
+nav ul{
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background: lightgrey;
+  top: 80px;
+  right: -100%;
+  text-align: center;
+  transition: all .5s
+}
+nav ul li{
+  display: block;
+  margin:50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+
+}
+a:hover,a.active{
+  background: none;
+  color: orangered;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+
+
+
+
+
+/*upper nav*/
+.line1{
+  font-size:25;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-display: bold;
+}
+.line2
+{ font-size:22;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: .01em;
+}
+div.container {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  margin-top: 100px;
+  display: inline-block;
+  }
+  .backimg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;height: 900px;
+  }
+
+  @media screen and (max-width: 700px) {
+    div.large {
+    display: none;
+    }
+    }
+    @media screen and (max-width: 700px) {
+      div.content {
+      color: black;
+      } 
+    }
+  img{
+    max-width: 100%;
+    height: auto;
+   
+  }
+
+  .content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    color:white;
+    margin-top: 0%;
+    text-align: center;padding-top:300px;margin-top: 300px;
+    
+
+  }
+  p{
+    padding-top: 20px;
+  }
+
+
+ /*@media screen and (max-width: 700) {
+
+    .food{
+  
+      width:400px;
+      height: auto;
+    }
+  }
+*/
+
+  .button {
+    border: none;
+    color: white;
+    padding: 12px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    
+  }
+  .butPlaystore {
+    background-color:transparent; 
+    color: white; 
+    border: 1px solid white;
+  }
+  
+  .butPlaystore:hover {
+    background-color: #f44336;
+    border:1px solid #f44336;
+    color: white;
+  }  
+
+
+  .butAppstore {
+    background-color:transparent; 
+    color: white; 
+    border: 1px solid white;
+  }
+  
+  .butAppstore:hover {
+    background-color: #f44336;
+    border:1px solid #f44336;
+    color: white;
+  } 
+  @media screen and (max-width: 700px) {
+
+  .butAppstore{
+    color:#f44336;
+    border: 1px solid #f44336;
+  }
+  .butPlaystore {
+
+    color: #f44336; 
+    border: 1px solid #f44336;
+  }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.footer-image{
+    width: 100%;
+    float:left;
+    height: 100px;
+}
+
+
+
+.fbutPlaystore {
+  font-size: 25px;
+  background-color:transparent; 
+  color: white; 
+  border: 1px solid white;
+  
+}
+
+.fbutPlaystore:hover {
+  background-color: #f44336;
+  border:1px solid #f44336;
+  color: white;
+}  
+
+
+.fbutAppstore {
+  font-size: 25px;
+  background-color:transparent; 
+  color: white; 
+  border: 1px solid white;
+}
+
+.fbutAppstore:hover {
+  background-color: #f44336;
+  border:1px solid #f44336;
+  color: white;
+} 
+@media screen and(max-width:700px){
+  
+.fbutAppstore{
+  font-size: 18px;
+}
+.fbutPlaystore{
+  font-size: 18px;
+}
+}
+.food{
+  margin-top: 450px;display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 800px;
+                width: 50%;
+                position:relative;
+                overflow-clip-margin:content-box;
+                overflow: clip;    margin-top: -10px;
+}
+.extrainfo{
+  width: 100%; margin-top: 1200px;
+}
+.footerblock{
+  color:black;
+}
+.footerImage{
+  height: 500px;
+}
+.footcontent{
+  text-align: center;
+  margin-top: 100px;
+}
+.footcontent h1{
+  color:white;display: block;
+                font-size: 40px;
+    font-weight: 700;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+}
+.content h3{
+  font-size: 50;
+}
+.footcontent h2{
+  color:white;font-weight: 500;
+                margin-top: 40px;display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+.footerblock{
+  background-color: #140152;
+  height: 500px;
+}
+  .footerImage{
+    display:none ;
+  }
+  .footcontent{
+    color:black;
+  }
+  
+  
+  }
+
+
+  @media (max-width: 576px){
+img .food{
+    width: 300px;
+    height: 300px;
+    margin-top: -60px;
+}}
+@media (max-width: 768px){
+img .food{
+    width: 350px;
+    height: 300px;
+}
+    }
+
+
+
+
+
+
+    .matimg img{
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+
+
+    .matcontent h2.heading{
+      color: #FA4A0C;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;padding-top: 180px;
+    }
+    @media (max-width: 768px){
+.matcontent h2.heading {
+    font-size: 18px;
+}}
+@media (max-width: 768px){
+.matcontent h1 {
+    font-size: 22px;
+}}
+
+.info h1{
+  padding: 0;
+      box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #252B42;margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold
+}
+    .matcontent h1{
+      padding: 0;
+      box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #252B42;margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold
+    }
+
+    h2.heading{
+      color: #FA4A0C;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;padding-top: 180px;
+    }
+    .blocks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+    h2.headingbody{
+          font-weight: 500;
+          color: #737373;    letter-spacing: 0.1em;    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;font-size: 22px;
+        }
+    .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+         
+        margin-right: 80px;
+        
+        }
+        .right{
+          margin-left:80px
+        }
+        .imgright{
+          margin-left: 100px;
+        }
+
+        img .blockimg {
+          text-align: center;
+          max-width: 100px;
+          height: auto;
+          margin-left: 150px;
+          
+          margin-top: 75px;
+        }
+
+
+@media (max-width: 576px){
+  .matcontent h2.headingbody {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .blocks {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .info{
+    order:1; 
+  }
+  .left{
+    margin-right: 20px;
+    text-align: center;
+  }
+  .blockimg{
+  order:2;
+  display: block;
+  margin: 30px auto;
+  height: 500px;
+  width: 500px;
+  margin-left: 30px;
+  text-align: center;
+  float: right;
+  }
+}
+.matcontent h2.heading{
+  text-align: center;
+}
+.matcontent h1{
+  text-align: center;
+}
+}
+@media (max-width: 576px){  
+.matimg{
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}}
+.cards {
+  max-width: 1200px;
+  margin: 30 30;
+  display: grid;
+  gap: 1rem;
+  border: 1px none; 
+}
+@media (min-width: 700px) {
+.cards { grid-template-columns: repeat(2, 1fr); }
+}
+.appworkheading {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-size: 44px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.extrainfo hr{
+  width:70%;height: 8px;margin-top: 30px;
+  color:grey;
+  text-align: center;
+}
+@media (max-width: 768px){
+  .extrainfo{
+    margin-top: 1300px;
+  }
+  .extrainfo hr{
+    display: none;
+  }
+}
+.extrainfo h1{
+  text-align: center;
+}
+@media (max-width: 768px){
+.appwork {
+  font-size: 34px; 
+  margin-top:90px ;
+}
+hr .underline{
+  display: none;
+}
+}
+.appwork{
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  font-size: 44px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+.last-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 150px;
+}
+.last-info{
+  list-style: none;
+  display: inline;
+  color: #FA4A0C;
+  margin-top: 80px;
+  transition: all 0.5s ease;
+  font-size: 2em;
+}
+.last-info ul li{
+  display: inline
+}
+.last-info ul li img{
+  height: 25px;
+  width:25px
+}
+.last-block{
+  width: 100%;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .last-blocks {
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    grid-gap:10px;
+    grid-auto-flow: dense;
+  }
+  .last-info{
+    order:1;
+  }
+  .last-rights{
+    order:2
+  }
+  .last-image{
+    display: none;
+    height: 100px;
+    width:100px;
+  }
+  
+}
+
+.last-image {
+  max-width: 80px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+.last-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.last-rights{
+  margin-top: 75px;
+}
+.last-rights p{
+  font-size: 18px;
+}
